@@ -1,9 +1,10 @@
 import { useLoaderData } from "react-router";
 import DescriptionItem from "../components/DescriptionItem/DescriptionItem";
 import MainDescr from "../components/MainDescr/MainDescr";
+import s from "./MainPage.module.scss";
+import sourceIcon  from '../assets/source-icon.svg'
 
 const MainPage = () => {
-
    const word = useLoaderData();
 
    if (!word[0]) {
@@ -12,14 +13,14 @@ const MainPage = () => {
 
    return (
       <div>
-         <div>
-            <MainDescr word={word[0]} />
-            {word[0].meanings.map((meanings, i) => (
-               <DescriptionItem
-                  key={i}
-                  meanings={meanings}
-               />
-            ))}
+         <MainDescr word={word[0]} />
+         {word[0].meanings.map((meanings, i) => (
+            <DescriptionItem key={i} meanings={meanings} />
+         ))}
+         <div className={s.sources}>
+            <h4 className={s.sourcesTitle}>Source</h4>
+
+            <a href={word[0].sourceUrls} className={s.sourcesLink}>{word[0].sourceUrls} <span><img src={sourceIcon} alt="" /></span></a>
          </div>
       </div>
    );

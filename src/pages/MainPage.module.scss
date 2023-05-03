@@ -1,0 +1,23 @@
+.sources {
+   font-size: 14px;
+   line-height: 17px;
+   text-decoration-line: underline;
+   color: #757575;
+   display: flex;
+   gap: 20px;
+   border-top: 1px solid #E9E9E9;
+   padding-top: 20px;
+   @media (max-width: 424.98px) {
+      flex-direction: column;
+      gap: 8px;
+   }
+}
+.sourcesTitle {
+}
+.sourcesLink {
+   color: #2D2D2D;
+   span {
+      padding-left: 9px;
+
+   }
+}

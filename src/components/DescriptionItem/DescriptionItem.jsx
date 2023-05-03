@@ -31,6 +31,7 @@ const DescriptionItem = ({ meanings }) => {
                </Link>
             </div>
          )}
+         
       </div>
    );
 };

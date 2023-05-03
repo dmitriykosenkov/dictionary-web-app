@@ -28,18 +28,18 @@
       border-bottom: 7px solid transparent;
    }
 }
-// .controls:hover {
-//    background-color: rgba(164, 69, 237);
-//    @media (max-width: 767.98px) {
-//       background-color: rgba(164, 69, 237);
-//    }
-// }
-// .controls:hover::before {
-//    border-left: 20px solid rgb(255, 255, 255);
-//    @media (max-width: 767.98px) {
-//       border-left: 13px solid rgb(255, 255, 255);
-//    }
-// }
+.controls:hover {
+   background-color: rgba(164, 69, 237);
+   @media (max-width: 767.98px) {
+      background-color: rgba(164, 69, 237);
+   }
+}
+.controls:hover::before {
+   border-left: 20px solid rgb(255, 255, 255);
+   @media (max-width: 767.98px) {
+      border-left: 13px solid rgb(255, 255, 255);
+   }
+}
 .active {
    background-color: rgba(164, 69, 237);
    @media (max-width: 767.98px) {
