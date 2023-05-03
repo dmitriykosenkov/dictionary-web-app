@@ -4,6 +4,9 @@
 }
 .body:not(:last-child) {
    margin-bottom: 40px;
+   @media (max-width: 767.98px) {
+      margin-bottom: 32px;
+   }
 }
 .title {
    font-weight: 700;
@@ -11,29 +14,41 @@
    line-height: 29px;
    margin-bottom: 40px;
    display: flex;
+   justify-content: space-between;
    @media (max-width: 767.98px) {
-      margin-bottom: 32px;
+      margin-bottom: 31px;
    }
 }
 .title p {
    font-style: italic;
+   @media (max-width: 767.98px) {
+      font-size: 18px;
+      line-height: 22px;
+   }
 }
 .title span {
    align-self: center;
-   flex: 0 1 656px;
+   flex: 0 1 89%; /* 656px/737px */
    height: 1px;
    background-color: #e9e9e9;
+   @media (max-width: 520px) {
+      flex: 0 1 81%;
+   }
 }
 .subtitle {
    line-height: 21px;
    color: #757575;
    margin-bottom: 25px;
    @media (max-width: 767.98px) {
-      margin-bottom: 25px;
+      font-size: 16px;
+      margin-bottom: 17px;
    }
 }
 .list {
    margin-bottom: 40px;
+   @media (max-width: 767.98px) {
+      margin-bottom: 24px;
+   }
 }
 .listItem {
    font-size: 18px;
@@ -76,6 +91,9 @@
 }
 .synonyms {
    display: flex;
+   @media (max-width: 767.98px) {
+      font-size: 16px;
+   }
 }
 .synonymsSubtitle {
    color: #757575;

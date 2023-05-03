@@ -1,6 +1,6 @@
 import React from "react";
 import useOutsideClick from "./hooks/useOutsideClick";
-import s from "./CustomSelect.module.css";
+import s from "./CustomSelect.module.scss";
 
 const CustomSelect = ({ onSelected, value, title, theme }) => {
    const options = [

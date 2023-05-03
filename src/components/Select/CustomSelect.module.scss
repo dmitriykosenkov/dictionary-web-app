@@ -4,6 +4,9 @@
    line-height: 24px;
    max-width: 342px;
    position: relative;
+   @media (max-width: 767.98px) {
+      font-size: 14px;
+   }
 }
 .selectTitle {
    position: relative;
@@ -13,11 +16,15 @@
    outline: none;
    border-radius: 10px;
    padding: 12px 20px;
+   @media (max-width: 767.98px) {
+      width: 98px;
+      padding: 12px 0px 12px 12px;
+   }
 }
 .selectTitle::before {
    content: "";
    position: absolute;
-   top: 13px;
+   top: 17px;
    right: 22px;
    width: 8px;
    height: 8px;
@@ -25,6 +32,9 @@
    border-top: 2px solid transparent;
    border-right: 2px solid transparent;
    transform: rotate(-45deg);
+   @media (max-width: 767.98px) {
+      right: 0;
+   }
 }
 .selectTitle.open::before {
    border: 2px solid #a445ed;
@@ -52,6 +62,9 @@
    opacity: 0;
    visibility: hidden;
    transition: all 0.2s;
+   @media (max-width: 767.98px) {
+      padding: 12px;
+   }
 }
 .customOptionsDark {
    background-color: #1f1f1f;

@@ -1,5 +1,5 @@
 import Audio from "../Audio/Audio";
-import s from "./MainDescr.module.css";
+import s from "./MainDescr.module.scss";
 
 const MainDescr = ({ word }) => {
    const isEmptyAudio = word.phonetics.length !== 0;

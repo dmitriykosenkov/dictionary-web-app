@@ -1,4 +1,4 @@
-import s from "./SearchBar.module.css";
+import s from "./SearchBar.module.scss";
 import searchIcon from "../../assets/search-icon.svg";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";

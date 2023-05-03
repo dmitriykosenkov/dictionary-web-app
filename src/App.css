@@ -9,7 +9,7 @@
 }
 @media (max-width: 767.98px) {
    .container {
-      padding: 24px;
+      padding: 24px 24px 60px;
       gap: 24px;
    }
 }

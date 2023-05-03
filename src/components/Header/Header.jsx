@@ -1,5 +1,5 @@
 import { useState } from "react";
-import s from "./Header.module.css";
+import s from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import CustomSelect from "../Select/CustomSelect";
