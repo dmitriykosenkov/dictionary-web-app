@@ -1,0 +1,28 @@
+.searchBar {
+   position: relative;
+   z-index: 0;
+}
+.searchBar input:focus {
+   transition: all 0.2s ease;
+   outline: 1px solid #a445ed;
+}
+.searchInput {
+   width: 100%;
+   background-color: #F4F4F4;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   padding: 20px 24px;
+   border-radius: 20px;
+}
+.searchInputDark {
+   background-color: #1f1f1f;
+   color: #F4F4F4;
+}
+
+.search {
+   position: absolute;
+   top: 50%;
+   right: 24px;
+   transform: translate(0, -50%);
+}

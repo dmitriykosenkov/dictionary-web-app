@@ -1,0 +1,91 @@
+.body {
+   font-size: 20px;
+   line-height: 24px;
+}
+.body:not(:last-child) {
+   margin-bottom: 40px;
+}
+.title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 29px;
+   margin-bottom: 40px;
+   display: flex;
+   @media (max-width: 767.98px) {
+      margin-bottom: 32px;
+   }
+}
+.title p {
+   font-style: italic;
+}
+.title span {
+   align-self: center;
+   flex: 0 1 656px;
+   height: 1px;
+   background-color: #e9e9e9;
+}
+.subtitle {
+   line-height: 21px;
+   color: #757575;
+   margin-bottom: 25px;
+   @media (max-width: 767.98px) {
+      margin-bottom: 25px;
+   }
+}
+.list {
+   margin-bottom: 40px;
+}
+.listItem {
+   font-size: 18px;
+   @media (max-width: 767.98px) {
+      font-size: 15px;
+   }
+}
+.listItem:not(:last-child) {
+   margin-bottom: 13px;
+}
+.listItemTitle {
+   position: relative;
+   padding-left: 47px;
+   @media (max-width: 767.98px) {
+      padding-left: 25px;
+   }
+}
+.listItemTitle::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 22px;
+   transform: translate(0, -50%);
+   width: 5px;
+   height: 5px;
+   background-color: #8f19e8;
+   border-radius: 50%;
+   @media (max-width: 767.98px) {
+      left: 0;
+   }
+}
+
+.listItemSubitle {
+   margin-top: 13px;
+   padding-left: 47px;
+   color: #757575;
+   @media (max-width: 767.98px) {
+      padding-left: 25px;
+   }
+}
+.synonyms {
+   display: flex;
+}
+.synonymsSubtitle {
+   color: #757575;
+   margin-right: 22px;
+}
+.synonymsTitle {
+   font-weight: 700;
+   color: #a445ed;
+   cursor: pointer;
+   &:hover {
+      text-decoration: underline;
+   }
+}

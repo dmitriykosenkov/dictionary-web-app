@@ -1,0 +1,19 @@
+.container {
+   max-width: 817px;
+   margin: 0 auto;
+   padding: 58px 40px;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+@media (max-width: 767.98px) {
+   .container {
+      padding: 24px;
+      gap: 24px;
+   }
+}
+
+
+
+

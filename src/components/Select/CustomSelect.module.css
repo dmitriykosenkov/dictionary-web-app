@@ -1,0 +1,82 @@
+.wrapper {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 24px;
+   max-width: 342px;
+   position: relative;
+}
+.selectTitle {
+   position: relative;
+   width: 200px;
+   height: 100%;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+   padding: 12px 20px;
+}
+.selectTitle::before {
+   content: "";
+   position: absolute;
+   top: 13px;
+   right: 22px;
+   width: 8px;
+   height: 8px;
+   border: 2px solid #333;
+   border-top: 2px solid transparent;
+   border-right: 2px solid transparent;
+   transform: rotate(-45deg);
+}
+.selectTitle.open::before {
+   border: 2px solid #a445ed;
+   border-top: 2px solid transparent;
+   border-right: 2px solid transparent;
+}
+.customSelect {
+   border-radius: 10px;
+   position: relative;
+   z-index: 5;
+   cursor: pointer;
+}
+.customOptions {
+   position: absolute;
+   top: 50px;
+   width: 100%;
+   background-color: #fff;
+   padding: 24px;
+   border-radius: 16px;
+   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+
+   overflow: hidden;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.2s;
+}
+.customOptionsDark {
+   background-color: #1f1f1f;
+   box-shadow: 0px 5px 30px #a445ed;
+}
+.customSelect.open .customOptions {
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.2s;
+}
+.customOption {
+   position: relative;
+   display: block;
+   cursor: pointer;
+   transition: all 0.2s;
+   color: grey;
+   height: 32px;
+}
+
+.optionContainer {
+   padding: 8px 0;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.optionContainer:hover {
+   color: #a445ed;
+}
