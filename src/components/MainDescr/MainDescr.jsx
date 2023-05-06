@@ -1,3 +1,4 @@
+import { AudioPlayerProvider } from "react-use-audio-player";
 import Audio from "../Audio/Audio";
 import s from "./MainDescr.module.scss";
 
@@ -11,9 +12,9 @@ const MainDescr = ({ word }) => {
             <div className={s.descriptionTitle}>{word.word}</div>
             <div className={s.descriptionSubtitle}>{word.phonetic}</div>
          </div>
-         <div className={s.audioBtn}>
+         <AudioPlayerProvider>
             {isEmptyAudio && isThereAudio && <Audio src={isThereAudio.audio} />}
-         </div>
+         </AudioPlayerProvider>
       </div>
    );
 };
