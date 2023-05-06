@@ -1,9 +1,8 @@
-import { useState } from "react";
-import s from "./Header.module.scss";
-import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import CustomSelect from "../Select/CustomSelect";
-import { Link } from "react-router-dom";
+import logo from "../../assets/logo.svg";
+import s from "./Header.module.scss";
 
 const Header = ({ setSelected, theme, toggleTheme }) => {
    return (

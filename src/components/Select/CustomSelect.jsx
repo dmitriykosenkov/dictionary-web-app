@@ -15,9 +15,9 @@ const CustomSelect = ({ onSelected, value, title, theme }) => {
       setOpen(false);
    });
    const selectHandler = (data) => {
-      onSelected(data)
-      setSelected(data)
-   }
+      onSelected(data);
+      setSelected(data);
+   };
    return (
       <div>
          <div
@@ -34,16 +34,21 @@ const CustomSelect = ({ onSelected, value, title, theme }) => {
                         title}
                   </span>
                </div>
-               <div className={theme === 'light' ? s.customOptions : `${s.customOptions} ${s.customOptionsDark}`}>
+               <div
+                  className={
+                     theme === "light"
+                        ? s.customOptions
+                        : `${s.customOptions} ${s.customOptionsDark}`
+                  }
+               >
                   {options.map((item) => {
                      return (
                         <div
-                        key={item.label}
+                           key={item.label}
                            onClick={() => selectHandler(item.value)}
                            className={s.optionContainer}
-                           style={{fontFamily: item.value}}
+                           style={{ fontFamily: item.value }}
                         >
-                           {/* <ion-icon src={item.pathLogo}></ion-icon> */}
                            {item.label}
                         </div>
                      );
@@ -51,7 +56,6 @@ const CustomSelect = ({ onSelected, value, title, theme }) => {
                </div>
             </div>
          </div>
-         {/* {error && !selected && <ErrorMessage errorMessage={error.message}/>} */}
       </div>
    );
 };

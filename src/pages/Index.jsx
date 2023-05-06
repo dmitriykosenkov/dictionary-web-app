@@ -1,4 +1,4 @@
-import s from "./Index.module.css";
+import s from "./Index.module.scss";
 
 export default function Index() {
    return (

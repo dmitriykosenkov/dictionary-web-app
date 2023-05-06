@@ -23,15 +23,14 @@ const DescriptionItem = ({ meanings }) => {
          {meanings.synonyms.length !== 0 && (
             <div className={s.synonyms}>
                <div className={s.synonymsSubtitle}>Synonyms</div>
-               <Link to={`/${meanings.synonyms[0]}`}
-                  // onClick={() => setSearch(meanings.synonyms[0])}
+               <Link
+                  to={`/${meanings.synonyms[0]}`}
                   className={s.synonymsTitle}
                >
                   {meanings.synonyms[0]}
                </Link>
             </div>
          )}
-         
       </div>
    );
 };

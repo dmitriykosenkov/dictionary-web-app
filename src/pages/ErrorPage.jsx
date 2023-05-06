@@ -1,7 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import errorIcon from "../assets/not-found-icon.png";
 
-import s from "./Errorpage.module.css";
+import s from "./Errorpage.module.scss";
 
 export default function ErrorPage() {
    const error = useRouteError();

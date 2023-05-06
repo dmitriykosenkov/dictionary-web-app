@@ -1,6 +1,6 @@
-import s from "./ThemeSwitcher.module.css";
 import switcherIcon from "../../assets/iconoir_half-moon.svg";
 import switcherIconDark from "../../assets/moon-dark.svg";
+import s from "./ThemeSwitcher.module.scss";
 
 
 const ThemeSwitcher = ({theme, toggleTheme}) => {
