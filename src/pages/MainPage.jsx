@@ -3,6 +3,7 @@ import DescriptionItem from "../components/DescriptionItem/DescriptionItem";
 import MainDescr from "../components/MainDescr/MainDescr";
 import s from "./MainPage.module.scss";
 import sourceIcon from "../assets/source-icon.svg";
+import { useEffect } from "react";
 
 const MainPage = () => {
    const word = useLoaderData();
@@ -10,6 +11,10 @@ const MainPage = () => {
    if (!word[0]) {
       return <div>Loading</div>;
    }
+
+   useEffect(() => {
+      console.log(word[0].sourceUrls);
+   }, [word[0]]);
 
    return (
       <div>
@@ -20,10 +25,14 @@ const MainPage = () => {
          <div className={s.sources}>
             <h4 className={s.sourcesTitle}>Source</h4>
             <a href={word[0].sourceUrls} className={s.sourcesLink}>
-               {word[0].sourceUrls}{" "}
-               <span>
-                  <img src={sourceIcon} alt="" />
-               </span>
+               {word[0].sourceUrls.map((url) => (
+                  <div>
+                     {url}{" "}
+                     <span>
+                        <img src={sourceIcon} alt="" />
+                     </span>
+                  </div>
+               ))}
             </a>
          </div>
       </div>
